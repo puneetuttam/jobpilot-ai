@@ -1,0 +1,10 @@
+import { Router } from "express";
+import { createJob, getJob, listJobs, updateStatus, listApplications, prepareApplication } from "../controllers/jobController.js";
+const router = Router();
+router.get("/", listJobs);
+router.post("/", createJob);
+router.get("/applications", listApplications);
+router.post("/:id/prepare", prepareApplication);
+router.get("/:id", getJob);
+router.patch("/:id/status", updateStatus);
+export default router;

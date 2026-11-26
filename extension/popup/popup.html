@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="popup.css"></head>
+<body>
+<main>
+  <h1>JobPilot AI</h1>
+  <p class="sub">Save a job you're viewing. Nothing is submitted automatically.</p>
+  <div class="platform" id="platform">Detecting platform…</div>
+  <label>Job title<input id="title" placeholder="Java / React Full Stack Developer"></label>
+  <label>Company<input id="company" placeholder="Company name"></label>
+  <label>Location<input id="location" placeholder="Bengaluru"></label>
+  <label>Job URL<input id="url" readonly></label>
+  <label>Job description<textarea id="description" placeholder="Paste the job description manually"></textarea></label>
+  <button id="save">Save job for review</button>
+  <div id="status" role="status"></div>
+  <small>Review the details in your dashboard. You remain in control of every application submission.</small>
+</main>
+<script src="popup.js"></script>
+</body></html>
